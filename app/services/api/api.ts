@@ -2,7 +2,7 @@
  * This Api class lets you define an API endpoint and methods to request
  * data and process it.
  *
- * See the [Backend API Integration](https://docs.infinite.red/ignite-cli/boilerplate/app/services/#backend-api-integration)
+ * See the [Backend API Integration](https://docs.infinite.red/ignite-cli/boilerplate/app/services/Services.md)
  * documentation for more details.
  */
 import { ApiResponse, ApisauceInstance, create } from "apisauce"

@@ -31,7 +31,8 @@
         "image": "./assets/images/splash-logo-android-universal.png",
         "resizeMode": "contain",
         "backgroundColor": "#191015"
-      }
+      },
+      "userInterfaceStyle": "light"
     },
     "ios": {
       "icon": "./assets/images/app-icon-ios.png",
@@ -42,7 +43,8 @@
         "tabletImage": "./assets/images/splash-logo-ios-tablet.png",
         "resizeMode": "contain",
         "backgroundColor": "#191015"
-      }
+      },
+      "userInterfaceStyle": "light"
     },
     "web": {
       "favicon": "./assets/images/app-icon-web-favicon.png",
@@ -54,6 +56,21 @@
       "bundler": "metro"
     },
     "plugins": [
+      [
+        "@react-native-tvos/config-tv",
+        {
+          "androidTVBanner": "./assets/images/tv_banner.png",
+          "appleTVImages": {
+            "icon": "./assets/images/ignite-tvos-1280x768.png",
+            "iconSmall": "./assets/images/ignite-tvos-400x240.png",
+            "iconSmall2x": "./assets/images/ignite-tvos-800x480.png",
+            "topShelf": "./assets/images/ignite-tvos-1920x720.png",
+            "topShelf2x": "./assets/images/ignite-tvos-3840x1440.png",
+            "topShelfWide": "./assets/images/ignite-tvos-2320x720.png",
+            "topShelfWide2x": "./assets/images/ignite-tvos-4640x1440.png"
+          }
+        }
+      ],
       "expo-localization",
       [
         "expo-build-properties",
